@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  header {
+    opacity: 90%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 1260px;
+    margin-left: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A86FF;
+    padding: 20px;
+    color: white;
+}
+.logo img {
+    height: 100px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    color: #28c056; 
+    margin-top: 160px;
+}
+h2 {
+    text-align: center;
+    color: #047377;
+}  
+label{
+    font-weight: 900;
+}
+input{
+    height: 40px;
+    width: 70%;
+    
+}
+.section{
+    margin-left: 60px;
+}
+footer {
+    position: relative;
+    background-color: #3A86FF; 
+    color: white;
+    padding: 0px 0px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 1300px;
+    border-radius: 15px;
+    margin-left: 20px;
+    height:500px;
+    margin-top: 40px;
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.fsection {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.fsection h1 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.fsection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fsection ul li {
+    margin-bottom: 10px;
+}
+#txt{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}

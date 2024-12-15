@@ -1,0 +1,358 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+#head{
+    margin-top: 130px;
+    height: 60px;
+    width: 1260px;
+    margin-left: 40px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(66, 206, 89);
+    text-align: left;
+    padding-top:35px;
+    font-size: 3em;
+    font-weight: bold;
+}
+#box1{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius:15px;
+    margin-left: 40px;
+    height: 200px;
+    width: 1260px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#topic{
+    font-weight: bold;
+    font-size: 1em;
+}
+#box2{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius:15px;
+    margin-left: 40px;
+    height: 300px;
+    width: 1260px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#h1{
+    height: 200px;
+    width: auto;
+    margin-left: 30px;
+}
+#container1{
+    display: flex;
+    align-items: flex-start;
+}
+#topic2{
+    font-size: 1em;
+    font-weight: bold;
+}
+#p1{
+    margin-left:40px;
+    
+}
+#box3{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius:15px;
+    margin-left: 40px;
+    height: 300px;
+    width: 1260px;
+    margin-top: 70px;
+    font-size: 20px;
+}
+#h2{
+    height: 200px;
+    width: auto;
+    margin-left: 30px;
+}
+#container2{
+    display: flex;
+    align-items: flex-start;
+}
+#topic3{
+    font-size: 1em;
+    font-weight: bold;
+}
+#p2{
+    margin-left:40px;
+    
+}
+#box4{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius:15px;
+    margin-left: 40px;
+    height: 300px;
+    width: 1260px;
+    margin-top: 70px;
+    font-size: 20px;
+}
+#h3{
+    height: 200px;
+    width: auto;
+    margin-left: 30px;
+}
+#container3{
+    display: flex;
+    align-items: flex-start;
+}
+#topic4{
+    font-size: 1em;
+    font-weight: bold;
+}
+#p3{
+    margin-left:40px;
+    
+}
+#box5{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius:15px;
+    margin-left: 40px;
+    height: 250px;
+    width: 1260px;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: center;
+}
+#table{
+    margin-top:100px;
+    margin-left: 215px; 
+}
+#map1{
+    margin-left: 400px;
+    height: 100px;
+    left: 40%;
+}
+#map2{
+    margin-left: 400px;
+    height: 100px;
+    left: 40%;
+}
+#map3{
+    margin-left: 400px;
+    height: 100px;
+    left: 40%;
+}
+header {
+    opacity: 90%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 1260px;
+    margin-left: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A86FF;
+    padding: 20px;
+    color: white;
+}
+.logo img {
+    height: 100px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    position: relative;
+    background-color: #3A86FF; 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 1260px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.fsection {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.fsection h1 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.fsection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fsection ul li {
+    margin-bottom: 10px;
+}
+
+.fsection ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.fsection ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-end {
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+
+/* Mobile View CSS */
+@media screen and (max-width: 768px) {
+    #head {
+        margin-top: 100px;
+        height: auto;
+        width:450px;
+        margin-left: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 2em;
+    }
+    #box5 {
+        margin-left: 0;
+        margin-bottom: 80px;
+        width:400px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    #box2, #box3{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 400px;
+        width:400px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    #box4 {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 170px;
+        width:400px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    #box1{
+        margin-bottom: 180px;
+        width:400px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    #container1, #container2, #container3 {
+        display:flex;
+        height: 400px;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        clear: both;
+    }
+    
+    #h1, #h2, #h3 {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    #p1, #p2, #p3 {
+        width: 250px;
+        margin-right: 10px;
+        padding-top: 10px;
+    }
+
+    iframe {
+        width:170px;
+        height: 900px;
+        margin-right: 10px;
+    }
+
+    #table {
+        margin-left:20px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    header {
+        position: relative; 
+        height: auto;
+        width: 450px;
+        padding: 10px;
+        border-radius:15px;
+
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    footer {
+        width: 450px;
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .fcontainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fsection {
+        margin: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./styles/register.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./index1images/logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="order.html">Pharmacy</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="head1">
+        Registration 
+    </div>
+    <div id="box1">
+        <div id="form1">
+            <form action="/submit_registration" method="POST" ></form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <button type="button" class="button">SUBMIT</button>
+            </form>
+        </div>
+        <div id="des1">
+            <p>
+                In Vinzeres Hospital, we're committed to provide top-notch medical care in all of our locations—Canada, India, and Dubai. Our cutting-edge facilities and highly skilled medical staff guarantee that every patient gets the greatest treatment and attention, customized to meet their specific needs.
+
+            You can receive a multitude of specialized services by registering with us, such as individualized healthcare programs, frequent health updates, and first access to our highly qualified medical staff.
+
+            Our first priority are your health and well-being, and we work hard to make sure you have a stress-free and easy experience with us.
+
+            </p>
+            <div id="why">
+                <ul>Why Register?</ul>
+                <li>Quick and Simple Appointments: Make quick appointments and receive priority booking.</li>
+                <li>Obtain Access to Your Health Records: At your convenience, view and manage your medical history.</li>
+                <li>Remain Up to Date: Get health advice, news, and appointment reminders for your subsequent consultations.</li>
+                <li>Personalized Care: Receive advice and medical schedules catered to your individual need.</li>
+            </div>
+            <p>Please fill in the form to create your account and begin your journey to better health with Vinzeres Hospital.
+
+            </p>
+        </div>
+    </div>
+        <footer>
+            <div class="fcontainer">
+                <div class="fsection">
+                    <h1>About Us</h1>
+                    <p>delivering compassionate, individualized treatment together with top-notch medical care. We put your health and wellbeing first.</p>
+                </div>
+                <div class="fsection">
+                    <h1>Fast Links</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="order.html">Pharmacy</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="fsection">
+                    <h1>Contact Us</h1>
+                    <p>Call Us: +1 (800) 123-4567</p>
+                    <p>Email: info@vinzereshospital.com</p>
+                </div>
+            </div>
+        <div class="footer-end">
+            <p> 2024 Vinzeres Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

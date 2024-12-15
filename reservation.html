@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="./styles/reservations.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./index1images/logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="order.html">Pharmacy</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <head>
+        <div id="head1">
+            Consulting Reservations 
+        </div>
+    </head>
+    <div class="container01">
+        <div class="form2">
+            <h2>Login to Your Account</h2>
+            <form action="/login" method="post">
+                <div class="formgroup">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formgroup">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="button" class="b1">Login</button>
+            </form>
+            <div class="reglink">
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+        <p>
+            Reserve an appointment (Fill form at the end of page!) .To see the doctors' available times, see the table below.
+        </p>
+        <div>
+            <h2>Doctor Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor Name</th>
+                        <th>Specialty</th>
+                        <th>Available Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Dr. James Smith</td><td>Cardiologist</td><td>8:00 AM - 12:00 PM</td></tr>
+                    <tr><td>Dr. Olivia Johnson</td><td>Dermatologist</td><td>9:00 AM - 1:00 PM</td></tr>
+                    <tr><td>Dr. William Brown</td><td>Neurologist</td><td>10:00 AM - 2:00 PM</td></tr>
+                    <tr><td>Dr. Ava Davis</td><td>Pediatrician</td><td>1:00 PM - 5:00 PM</td></tr>
+                    <tr><td>Dr. Noah Wilson</td><td>Orthopedic Surgeon</td><td>2:00 PM - 6:00 PM</td></tr>
+                    <tr><td>Dr. Emma Martinez</td><td>Gynecologist</td><td>8:00 AM - 12:00 PM</td></tr>
+                    <tr><td>Dr. Elijah Anderson</td><td>ENT Specialist</td><td>9:00 AM - 1:00 PM</td></tr>
+                    <tr><td>Dr. Sophia Taylor</td><td>Psychiatrist</td><td>10:00 AM - 2:00 PM</td></tr>
+                    <tr><td>Dr. Lucas Thomas</td><td>Ophthalmologist</td><td>11:00 AM - 3:00 PM</td></tr>
+                    <tr><td>Dr. Mia Jackson</td><td>Oncologist</td><td>12:00 PM - 4:00 PM</td></tr>
+                    <tr><td>Dr. Benjamin Harris</td><td>Urologist</td><td>1:00 PM - 5:00 PM</td></tr>
+                    <tr><td>Dr. Charlotte Clark</td><td>Nephrologist</td><td>2:00 PM - 6:00 PM</td></tr>
+                    <tr><td>Dr. Henry Lewis</td><td>General Surgeon</td><td>8:00 AM - 12:00 PM</td></tr>
+                    <tr><td>Dr. Amelia Walker</td><td>Allergist</td><td>9:00 AM - 1:00 PM</td></tr>
+                    <tr><td>Dr. Jack Lee</td><td>Endocrinologist</td><td>10:00 AM - 2:00 PM</td></tr>
+                    <tr><td>Dr. Harper Young</td><td>Rheumatologist</td><td>11:00 AM - 3:00 PM</td></tr>
+                    <tr><td>Dr. Ethan King</td><td>Pulmonologist</td><td>12:00 PM - 4:00 PM</td></tr>
+                    <tr><td>Dr. Isabella Wright</td><td>Gastroenterologist</td><td>1:00 PM - 5:00 PM</td></tr>
+                    <tr><td>Dr. Alexander Scott</td><td>Plastic Surgeon</td><td>2:00 PM - 6:00 PM</td></tr>
+                    <tr><td>Dr. Grace Green</td><td>Hematologist</td><td>8:00 AM - 12:00 PM</td></tr>
+                    <tr><td>Dr. Jackson Adams</td><td>Vascular Surgeon</td><td>9:00 AM - 1:00 PM</td></tr>
+                    <tr><td>Dr. Layla Baker</td><td>Radiologist</td><td>10:00 AM - 2:00 PM</td></tr>
+                    <tr><td>Dr. Daniel Hill</td><td>Infectious Disease</td><td>11:00 AM - 3:00 PM</td></tr>
+                    <tr><td>Dr. Zoey Phillips</td><td>Immunologist</td><td>12:00 PM - 4:00 PM</td></tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+    <div class="form02">
+        <h2>Doctor Reservation</h2>
+        <form action="/reserve" method="POST">
+            <div class="element">
+                <label for="doctor-name">Doctor's Name:</label>
+                <input type="text" id="doctor-name" name="doctor_name" placeholder="Enter doctor's name" required>
+            </div>
+            <div class="element">
+                <label for="patient-name">Your Name:</label>
+                <input type="text" id="patient-name" name="patient_name" placeholder="Enter your name" required>
+            </div>
+            <button type="submit" class="b2">Reserve Appointment</button>
+        </form>
+    </div>
+    
+    <div class="note">
+        <p>Please be present at the hospital at your reserved time.</p>
+    </div>
+    <footer>
+        <div class="fcontainer">
+            <div class="fsection">
+                <h1>About Us</h1>
+                <p>delivering compassionate, individualized treatment together with top-notch medical care. We put your health and wellbeing first.</p>
+            </div>
+            <div class="fsection">
+                <h1>Fast Links</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="order.html">Pharmacy</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="fsection">
+                <h1>Contact Us</h1>
+                <p>Call Us: +1 (800) 123-4567</p>
+                <p>Email: info@vinzereshospital.com</p>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p> 2024 Vinzeres Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

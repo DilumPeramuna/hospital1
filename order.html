@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Order Page</title>
+  <link rel="stylesheet" href="./styles/orderstyles.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./orderImages/logo2.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="order.html">Pharmacy</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Vinzeres Pharmacy Hub</h1>  
+  <div class="container">
+    <form id="orderForm"> 
+      <div class="section">
+        <section>
+            <h2>Analgesics</h2>
+            <div class="item">
+                <span>Paracetamol </span>
+                <img src="./orderImages/1.jpg" alt="1">
+                <label class="cost">5$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Paracetamol"  data-price="5" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Ibuprofen </span>
+                <img src="./orderImages/2.jpg" alt="2">
+                <label class="cost">15$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Ibuprofen"  data-price="15" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Aspirin</span>
+                <img src="./orderImages/3.jpg" alt="3">
+                <label class="cost">11$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Aspirin"  data-price="11" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Codeine</span>
+                <img src="./orderImages/4.jpg" alt="4">
+                <label class="cost">7$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Codeine"  data-price="7" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Morphine</span>
+                <img src="./orderImages/5.jpg" alt="5">
+                <label class="cost">3$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Morphine"  data-price="3" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Tramadol</span>
+                <img src="./orderImages/6.jpg" alt="6">
+                <label class="cost">8$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Tramadol"  data-price="8" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+        </section>
+
+      
+        <section>
+            <h2>Antibiotics</h2>
+            <div class="item">
+                <span>Amoxicillin</span>
+                <img src="./orderImages/7.jpg" alt="7">
+                <label class="cost">19$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Amoxicillin"  data-price="19" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Ciprofloxacin </span>
+                <img src="./orderImages/8.jpg" alt="8">
+                <label class="cost">13$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Ciprofloxacin"  data-price="13" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Doxycycline</span>
+                <img src="./orderImages/9.jpg" alt="9">
+                <label class="cost">15$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Doxycycline"  data-price="15" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Azithromycin</span>
+                <img src="./orderImages/10.jpg" alt="10">
+                <label class="cost">12$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Azithromycin"  data-price="12" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Ceftriaxone</span>
+                <img src="./orderImages/11.jpg" alt="11">
+                <label class="cost">4$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Ceftriaxone"  data-price="4" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Metronidazole</span>
+                <img src="./orderImages/12.jpg" alt="12">
+                <label class="cost">4$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Metronidazole"  data-price="4" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+        
+        </section>
+        <section>
+            <h2> Antidepressants</h2>
+            <div class="item">
+                <span>Sertraline</span>
+                <img src="./orderImages/13.jpg" alt="13">
+                <label class="cost">3$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Sertraline"  data-price="3" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Fluoxetine</span>
+                <img src="./orderImages/14.jpg" alt="14">
+                <label class="cost">11$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Fluoxetine"  data-price="11" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Amitriptyline</span>
+                <img src="./orderImages/15.jpg" alt="15">
+                <label class="cost">10$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Amitriptyline"  data-price="10" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Venlafaxine</span>
+                <img src="./orderImages/16.jpg" alt="16">
+                <label class="cost">9$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Venlafaxine"  data-price="9" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Escitalopram</span>
+                <img src="./orderImages/17.jpg" alt="17">
+                <label class="cost">16$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Escitalopram"  data-price="16" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Bupropion</span>
+                <img src="./orderImages/18.jpg" alt="18">
+                <label class="cost">18$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Bupropion"  data-price="18" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+       
+        </section>
+        <section>
+            <h2>Antihistamines</h2>
+            <div class="item">
+                <span>Cetirizine</span>
+                <img src="./orderImages/19.jpg" alt="19">
+                <label class="cost">6$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Cetirizine"  data-price="6" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Diphenhydramine</span>
+                <img src="./orderImages/20.jpg" alt="20">
+                <label class="cost">17$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Diphenhydramine"  data-price="17" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Loratadine</span>
+                <img src="./orderImages/21.jpg" alt="21">
+                <label class="cost">14$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Loratadine"  data-price="14" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Fexofenadine</span>
+                <img src="./orderImages/22.jpg" alt="22">
+                <label class="cost">10$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Fexofenadine"  data-price="10" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Chlorpheniramine</span>
+                <img src="./orderImages/23.jpg" alt="23">
+                <label class="cost">19$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Chlorpheniramine"  data-price="19" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Hydroxyzine</span>
+                <img src="./orderImages/24.jpg" alt="24">
+                <label class="cost">6$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Hydroxyzine"  data-price="6" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+        
+        </section>
+        <section>
+            <h2>Antihypertensives</h2>
+            <div class="item">
+                <span>Amlodipine</span>
+                <img src="./orderImages/25.jpg" alt="25">
+                <label class="cost">4$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Amlodipine"  data-price="4" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Lisinopril</span>
+                <img src="./orderImages/26.jpg" alt="26">
+                <label class="cost">15$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Lisinopril"  data-price="15" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Losartan</span>
+                <img src="./orderImages/27.jpg" alt="27">
+                <label class="cost">12$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Losartan"  data-price="12" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Hydrochlorothiazide</span>
+                <img src="./orderImages/28.jpg" alt="28">
+                <label class="cost">13$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Hydrochlorothiazide"  data-price="13" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Metoprolol</span>
+                <img src="./orderImages/29.jpg" alt="29">
+                <label class="cost">3$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Metoprolol"  data-price="3" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+            <div class="item">
+                <span>Clonidine</span>
+                <img src="./orderImages/30.jpg" alt="30">
+                <label class="cost">20$</label>
+                <label for="1">Number Of Peices:</label>
+                <input type="number" min="0" data-name="Clonidine"  data-price="20" >
+                <label id="point">*Press Enter to add item to cart</label>
+            </div>
+        
+        </section>
+      </div>
+
+      <button type="button" id="addToFavourites">Add to Favourites</button>
+      <button type="button" id="applyFavourites">Apply Favourites</button>
+
+      <table id="orderTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td id="totalPrice">0</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <button type="button" id="buyNow">Buy Now</button>
+    </form>
+  </div>
+
+  <script src="./js/script.js"></script>
+  <footer>
+    <div class="fcontainer">
+        <div class="fsection">
+            <h1>About Us</h1>
+            <p>delivering compassionate, individualized treatment together with top-notch medical care. We put your health and wellbeing first.</p>
+        </div>
+        <div class="fsection">
+            <h1>Fast Links</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="order.html">Pharmacy</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <div class="fsection">
+            <h1>Contact Us</h1>
+            <p>Call Us: +1 (800) 123-4567</p>
+            <p>Email: <a href="/cdn-cgi/l/email-protection" class="_cf_email_" data-cfemail="4f262129200f392621352a3d2a3c27203c3f263b2e23612c2022">[email&#160;protected]</a></p>
+        </div>
+    </div>
+    <div class="footer-end">
+        <p> 2024 Vinzeres Hospital. All Rights Reserved.</p>
+    </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+
