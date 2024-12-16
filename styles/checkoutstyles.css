@@ -161,3 +161,46 @@ footer {
   margin-right: 20px;
   margin-top: 30px;
 }
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  footer {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .fcontainer {
+    flex-direction: column;
+  }
+
+  .fsection {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

@@ -1,9 +1,9 @@
-const orderSummaryTable = document.getElementById('orderSummary').querySelector('tbody');
-const totalAmountElement = document.getElementById('totalAmount');
-const checkoutForm = document.getElementById('checkoutForm');
+const finalTable = document.getElementById('orderSummary').querySelector('tbody');
+const tCost = document.getElementById('totalAmount');
+const finalForm = document.getElementById('checkoutForm');
 
 document.addEventListener('DOMContentLoaded', () => {
-  const order = JSON.parse(localStorage.getItem('favouriteOrder')) || [];
+  const order = JSON.parse(localStorage.getItem('currentOrder')) || [];
   let total = 0;
 
   order.forEach(item => {
@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
       <td>${item.quantity}</td>
       <td>${item.price}</td>
     `;
-    orderSummaryTable.appendChild(row);
+    finalTable.appendChild(row);
     total += item.price;
   });
 
-  totalAmountElement.textContent = total.toFixed(2);
+  tCost.textContent = total.toFixed(2);
 });
 
-checkoutForm.addEventListener('submit', (event) => {
+finalForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const name = document.getElementById('name').value;

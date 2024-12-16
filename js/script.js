@@ -1,6 +1,6 @@
-const form = document.getElementById('orderForm');
-const orderTable = document.getElementById('orderTable').querySelector('tbody');
-const totalPriceElement = document.getElementById('totalPrice');
+const oform = document.getElementById('form1');
+const Table1 = document.getElementById('oTable').querySelector('tbody');
+const tPrice = document.getElementById('totalPrice');
 const addToFavouritesButton = document.getElementById('addToFavourites');
 const applyFavouritesButton = document.getElementById('applyFavourites');
 const buyNowButton = document.getElementById('buyNow');
@@ -9,7 +9,7 @@ let order = [];
 let total = 0;
 
 function updateTable() {
-  orderTable.innerHTML = '';
+  Table1.innerHTML = '';
   total = 0;
 
   order.forEach(item => {
@@ -19,15 +19,15 @@ function updateTable() {
       <td>${item.quantity}</td>
       <td>${item.price}</td>
     `;
-    orderTable.appendChild(row);
+    Table1.appendChild(row);
     total += item.price;
   });
 
-  totalPriceElement.textContent = total.toFixed(2);
+  tPrice.textContent = total.toFixed(2);
 }
 
-form.addEventListener('change', (event) => {
-  const inputs = form.querySelectorAll('input[type="number"]');
+oform.addEventListener('change', (event) => {
+  const inputs = oform.querySelectorAll('input[type="number"]');
   order = [];
 
   inputs.forEach(input => {
@@ -49,18 +49,27 @@ addToFavouritesButton.addEventListener('click', () => {
   alert('Order saved as favourite!');
 });
 
+
 applyFavouritesButton.addEventListener('click', () => {
   const favouriteOrder = JSON.parse(localStorage.getItem('favouriteOrder')) || [];
-  const inputs = form.querySelectorAll('input[type="number"]');
+  const inputs = oform.querySelectorAll('input[type="number"]');
 
-  inputs.forEach(input => {
-    const item = favouriteOrder.find(fav => fav.name === input.dataset.name);
-    input.value = item ? item.quantity : '';
+  const updatedOrder = [...order];
+
+  favouriteOrder.forEach(fav => {
+    const existingItemIndex = updatedOrder.findIndex(item => item.name === fav.name);
+    if (existingItemIndex !== -1) {
+      updatedOrder[existingItemIndex].quantity += fav.quantity;
+      updatedOrder[existingItemIndex].price += fav.price;
+    } else {
+      updatedOrder.push(fav);
+    }
   });
 
-  order = favouriteOrder;
+  order = updatedOrder;
   updateTable();
 });
+
 
 buyNowButton.addEventListener('click', () => {
   localStorage.setItem('currentOrder', JSON.stringify(order));
